@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamLine Home | Compare Internet &amp; TV Plans</title>
+  <meta name="description"
+    content="Compare fiber internet, live TV and bundle plans in your area. Same-day setup, transparent pricing, real support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 8.5C7 3.5 17 3.5 22 8.5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            <path d="M5.5 12C9 8.7 15 8.7 18.5 12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            <path d="M9 15.5C10.8 13.8 13.2 13.8 15 15.5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            <circle cx="12" cy="19" r="1.4" fill="#fff" />
+          </svg>
+        </span>
+        Stream<span>Line</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="plans.html" data-page="plans.html">Plans</a>
+
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+            Brands
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="brands/xfinity.html">Xfinity</a>
+            <a href="brands.html#novaconnect">NovaConnect</a>
+            <a href="brands.html#primecable">PrimeCable</a>
+            <a href="brands.html#swiftband">SwiftBand</a>
+            <a href="brands.html#urbanstream">UrbanStream</a>
+            <a href="brands.html#clearwave">ClearWave</a>
+            <a href="brands.html#metrolink">MetroLink</a>
+          </div>
+        </div>
+
+        <a href="about.html" data-page="about.html">About Us</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="contact.html" data-page="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+18447813344" class="phone-pill">
+          <span class="ring-dot"><svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11 21 3 13 3 4.6c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"
+                fill="#0F1B3D" />
+            </svg></span>
+          <span><small>Call for best rates</small>(844) 781-3344</span>
+        </a>
+        <button class="nav-toggle" id="navToggle"
+          aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-network" aria-hidden="true">
+      <svg class="hero-network-svg" viewBox="0 0 1200 700" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="fiberLine" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00C2CC" stop-opacity="0"/>
+            <stop offset="45%" stop-color="#00C2CC" stop-opacity=".8"/>
+            <stop offset="100%" stop-color="#FFB020" stop-opacity=".15"/>
+          </linearGradient>
+          <filter id="fiberGlow">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <g class="fiber-paths" fill="none" stroke="url(#fiberLine)" stroke-width="1.5">
+          <path d="M-80 560 C180 470 180 170 430 230 S760 500 940 290 S1160 120 1280 180"/>
+          <path d="M-100 610 C180 540 270 300 470 330 S720 610 970 420 S1110 250 1300 300"/>
+          <path d="M-60 430 C160 360 260 80 510 170 S780 390 1030 210 S1160 70 1270 110"/>
+          <path d="M40 690 C220 560 390 560 540 450 S790 240 970 310 S1120 540 1270 450"/>
+        </g>
+
+        <g class="network-nodes" fill="#8fe3e8" filter="url(#fiberGlow)">
+          <circle cx="180" cy="470" r="4"/>
+          <circle cx="430" cy="230" r="5"/>
+          <circle cx="760" cy="500" r="4"/>
+          <circle cx="940" cy="290" r="5"/>
+          <circle cx="270" cy="300" r="3"/>
+          <circle cx="970" cy="420" r="4"/>
+          <circle cx="510" cy="170" r="4"/>
+          <circle cx="1030" cy="210" r="5"/>
+        </g>
+
+        <g class="signal-rings" fill="none" stroke="#00C2CC">
+          <circle cx="940" cy="290" r="20"/>
+          <circle cx="940" cy="290" r="20"/>
+          <circle cx="430" cy="230" r="16"/>
+        </g>
+
+        <g class="data-packets" fill="#fff">
+          <circle class="packet packet-a" r="4"/>
+          <circle class="packet packet-b" r="3"/>
+          <circle class="packet packet-c" r="4"/>
+          <circle class="packet packet-d" r="3"/>
+        </g>
+      </svg>
+    </div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Internet · Live TV · Bundles</div>
+        <h1>Fast internet and more entertainment, one simple choice.</h1>
+        <p class="lede">Compare fiber internet speeds and live TV packages from trusted providers in your area, then get
+          set up as soon as tomorrow &mdash; no confusing contracts, no surprise fees.</p>
+        <div class="hero-actions">
+          <a href="tel:+18447813344" class="btn btn-primary">Call (844) 781-3344</a>
+          <a href="plans.html" class="btn btn-ghost">Browse Plans</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b data-count="98" data-suffix="%">0</b><span>On-time installs</span></div>
+          <div class="stat"><b data-count="200" data-suffix="+">0</b><span>HD &amp; 4K channels</span></div>
+          <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>Customer support</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="dial-card">
+          <div class="dial-head">
+            <span>Live speed check</span>
+            <span class="live-dot"><i></i>Connected</span>
+          </div>
+          <div class="gauge">
+            <svg viewBox="0 0 200 120">
+              <defs>
+                <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#00C2CC" />
+                  <stop offset="100%" stop-color="#FFB020" />
+                </linearGradient>
+              </defs>
+              <path class="gauge-track" d="M20,110 A80,80 0 0 1 180,110" />
+              <path class="gauge-fill" d="M20,110 A80,80 0 0 1 180,110" pathLength="251" />
+            </svg>
+            <div class="gauge-readout"><b>940</b><span>Mbps download</span></div>
+          </div>
+          <div class="dial-foot">
+            <div><b data-count="12" data-decimals="1">0</b><span>Ping (ms)</span></div>
+            <div><b data-count="880" data-suffix="↑">0</b><span>Upload Mbps</span></div>
+            <div><b>A+</b><span>Reliability</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <span>FiberCore</span><span>NovaConnect</span><span>PrimeCable</span><span>SwiftBand</span><span>UrbanStream</span><span>ClearWave</span><span>MetroLink</span>
+          <span>FiberCore</span><span>NovaConnect</span><span>PrimeCable</span><span>SwiftBand</span><span>UrbanStream</span><span>ClearWave</span><span>MetroLink</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="head-row reveal">
+        <div>
+          <div class="eyebrow">What we help you compare</div>
+          <h2>Everything your home needs to stay connected</h2>
+        </div>
+        <p>From fiber speeds to streaming-friendly TV lineups, we match you with a plan built around how your household
+          actually uses the internet.</p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 10c5.5-5 10.5-5 16 0M7 13.5c3.3-3 6.7-3 10 0M10.2 17c1.2-1.1 2.4-1.1 3.6 0"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <circle cx="12" cy="20" r="1.3" fill="currentColor" />
+            </svg></div>
+          <h3>Fiber Broadband</h3>
+          <p>Dependable, low-latency internet built for streaming, gaming, video calls and everyday multi-device life.
+          </p>
+          <a href="plans.html" class="card-link">See internet plans <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="5" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2" />
+              <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg></div>
+          <h3>Live TV &amp; Streaming</h3>
+          <p>The channels, movies and sports your household follows, packaged into one clear, easy-to-manage lineup.</p>
+          <a href="plans.html" class="card-link">See TV packages <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none">
+              <rect x="4" y="2" width="16" height="20" rx="3" stroke="currentColor" stroke-width="2" />
+              <path d="M9 18h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg></div>
+          <h3>Stay Connected Everywhere</h3>
+          <p>Whole-home WiFi and mobile-friendly options so every room, device and family member stays online.</p>
+          <a href="contact.html" class="card-link">Talk to our team <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT TEASER ============ -->
+  <section class="section section--cloud">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <div class="img-a"><img src="assets/images/v2.avif" alt="Family relaxing while streaming a show together"></div>
+        <div class="img-b"><img src="assets/images/v1.png" alt="Technician setting up a home router"></div>
+        <div class="float-badge">
+          <div class="badge-icon"><svg viewBox="0 0 24 24" fill="none">
+              <path d="M20 6L9 17l-5-5" stroke="#0F1B3D" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></div>
+          <div><b>Same-day setup</b><span>In most service areas</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">About StreamLine Home</div>
+        <h2>Better connections. Better entertainment.</h2>
+        <p class="lede">We make it easier to explore internet and TV options for your home. Whether you need faster
+          speeds for remote work, more entertainment for the whole family, or a convenient bundle, our team helps you
+          compare real plans and pick with confidence.</p>
+        <ul class="check-list">
+          <li><i><svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></i>High-speed internet options</li>
+          <li><i><svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></i>TV &amp; entertainment packages</li>
+          <li><i><svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></i>Flexible service choices</li>
+          <li><i><svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></i>Helpful customer assistance</li>
+        </ul>
+        <a href="tel:+18447813344" class="btn btn-primary">Call (844) 781-3344</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE ============ -->
+  <section class="section">
+    <div class="container why-grid">
+      <div class="reveal">
+        <div class="eyebrow">Our benefits</div>
+        <h2>Why choose StreamLine Home?</h2>
+        <p class="lede" style="margin:16px 0 34px;">Six reasons homes across the country compare and switch with us
+          every month.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="2" />
+              </svg></div>
+            <div>
+              <h4>Easy Setup</h4>
+              <p>Guided scheduling, most homes live within 48 hours.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2" />
+                <path d="M8 21h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg></div>
+            <div>
+              <h4>HD &amp; 4K Entertainment</h4>
+              <p>Crisp picture quality across every connected screen.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 10c5.5-5 10.5-5 16 0M7 13.5c3.3-3 6.7-3 10 0" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" />
+                <circle cx="12" cy="18" r="1.3" fill="currentColor" />
+              </svg></div>
+            <div>
+              <h4>High-Speed Internet</h4>
+              <p>Fiber-backed plans built for busy, connected homes.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg></div>
+            <div>
+              <h4>Flexible TV Options</h4>
+              <p>Mix channel lineups to fit exactly what your family watches.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2v20M4 8l8-6 8 6M4 8v9a2 2 0 002 2h12a2 2 0 002-2V8" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            <div>
+              <h4>Convenient Bundles</h4>
+              <p>Combine internet and TV for one simple monthly bill.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13.7 21a2 2 0 01-3.4 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg></div>
+            <div>
+              <h4>Helpful Assistance</h4>
+              <p>Real people, ready to help with billing or technical questions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-panel reveal">
+        <span class="eyebrow" style="color:#8fe3e8;">Get extra benefit</span>
+        <h3>More entertainment. More speed. Better value.</h3>
+        <p>Upgrade your home with premium internet and TV services designed for uninterrupted entertainment and reliable
+          performance at a competitive price.</p>
+        <a href="tel:+18447813344" class="btn btn-amber">Call (844) 781-3344</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="stat-band reveal">
+        <div class="stat"><b data-count="120" data-suffix="k+">0</b><span>Homes connected</span></div>
+        <div class="stat"><b data-count="4.9" data-decimals="1">0</b><span>Average customer rating</span></div>
+        <div class="stat"><b data-count="50" data-suffix="+">0</b><span>States covered</span></div>
+        <div class="stat"><b data-count="15" data-suffix=" yrs">0</b><span>Helping homes connect</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLANS PREVIEW ============ -->
+  <section class="section section--cloud">
+    <div class="container">
+      <div class="head-row reveal">
+        <div>
+          <div class="eyebrow">What you get</div>
+          <h2>Everything you need in one package</h2>
+        </div>
+        <p>Our bundled plans combine high-speed internet and premium TV to deliver uninterrupted entertainment at a fair
+          price.</p>
+      </div>
+
+      <div class="plan-grid">
+        <div class="plan-card reveal">
+          <div class="plan-name">STARTER</div>
+          <div class="plan-price"><b>$39.99</b><span>/mo</span></div>
+          <div class="plan-sub">Great for browsing, email &amp; light streaming</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>100 Mbps fiber internet</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Unlimited data</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Standard WiFi router</li>
+          </ul>
+          <a href="plans.html" class="btn btn-ghost btn-block">View plan</a>
+        </div>
+
+        <div class="plan-card is-popular reveal">
+          <div class="plan-badge">Most popular</div>
+          <div class="plan-name">PREFERRED BUNDLE</div>
+          <div class="plan-price"><b>$79.99</b><span>/mo</span></div>
+          <div class="plan-sub">Fiber internet + 200+ channel TV lineup</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>500 Mbps fiber internet</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>200+ HD &amp; 4K channels</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Whole-home WiFi mesh</li>
+          </ul>
+          <a href="plans.html" class="btn btn-primary btn-block">View plan</a>
+        </div>
+
+        <div class="plan-card reveal">
+          <div class="plan-name">ULTIMATE</div>
+          <div class="plan-price"><b>$119.99</b><span>/mo</span></div>
+          <div class="plan-sub">Max speed for large, connected households</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>1 Gig fiber internet</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>300+ premium channels</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Priority support line</li>
+          </ul>
+          <a href="plans.html" class="btn btn-ghost btn-block">View plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+
+      <div class="eyebrow testimonials-eyebrow">Testimonials</div>
+
+      <h2 class="testimonials-title">What our customers say</h2>
+
+      <div class="testimonials-slider">
+
+        <div class="testimonials-track">
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-quote">
+                "The TV package covers every channel our family actually watches.
+                Great value for the price and genuinely helpful customer service."
+              </p>
+
+              <div class="testi-person">
+                <div>
+                  <b>Sarah Johnson</b>
+                  <span>StreamLine customer since 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-quote">
+                "Installation was done the same day, and the internet speed has
+                been outstanding. Streaming and gaming have never been smoother."
+              </p>
+
+              <div class="testi-person">
+                <div>
+                  <b>Michael Carter</b>
+                  <span>Preferred Bundle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-quote">
+                "Professional technicians, easy setup, and reliable service.
+                Highly recommended for anyone comparing internet and TV bundles."
+              </p>
+
+              <div class="testi-person">
+                <div>
+                  <b>Jennifer Wilson</b>
+                  <span>Ultimate plan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-quote">
+                "We switched from another provider and noticed the difference
+                immediately — faster internet and a lower monthly bill."
+              </p>
+
+              <div class="testi-person">
+                <div>
+                  <b>Amanda Reyes</b>
+                  <span>Starter plan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Additional testimonial -->
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-quote">
+                "The service has been dependable from day one. The entire
+                process was simple and the support team was excellent."
+              </p>
+
+              <div class="testi-person">
+                <div>
+                  <b>Emily Davis</b>
+                  <span>Premium Bundle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Additional testimonial -->
+          <div class="testi-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-quote">
+                "Excellent internet service and a great selection of channels.
+                Everything works exactly as promised."
+              </p>
+
+              <div class="testi-person">
+                <div>
+                  <b>David Miller</b>
+                  <span>Family Bundle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="testi-arrow testi-prev" aria-label="Previous testimonials">
+          &#10094;
+        </button>
+
+        <button class="testi-arrow testi-next" aria-label="Next testimonials">
+          &#10095;
+        </button>
+
+      </div>
+
+      <div class="testi-dots"></div>
+
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--cloud" id="faq">
+    <div class="container">
+      <div class="eyebrow" style="justify-content:center;display:flex;">FAQ</div>
+      <h2 style="text-align:center;margin-bottom:46px;">Frequently asked questions</h2>
+
+      <div class="faq-wrap reveal">
+        <div class="faq-item">
+          <button class="faq-q">How quickly can my service be installed?<span class="plus"></span></button>
+          <div class="faq-a">
+            <p>Most installations are completed within 24&ndash;48 hours, depending on service availability in your
+              area.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you offer unlimited internet plans?<span class="plus"></span></button>
+          <div class="faq-a">
+            <p>Yes. We offer multiple unlimited data plans suited for streaming, gaming and remote work.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I bundle internet and TV services?<span class="plus"></span></button>
+          <div class="faq-a">
+            <p>Absolutely. Our bundle packages help you save money while enjoying both internet and TV in one bill.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Are there any hidden fees?<span class="plus"></span></button>
+          <div class="faq-a">
+            <p>No. We believe in transparent pricing with no unexpected monthly charges.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How do I check service availability?<span class="plus"></span></button>
+          <div class="faq-a">
+            <p>Simply call our team with your ZIP code and we'll confirm what's available at your address.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h3>Ready for faster internet and better entertainment?</h3>
+          <p>Talk to a plan specialist and get connected as soon as tomorrow.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+18447813344" class="btn btn-amber">Call (844) 781-3344</a>
+          <a href="contact.html" class="btn btn-ghost">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M2 8.5C7 3.5 17 3.5 22 8.5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                <path d="M5.5 12C9 8.7 15 8.7 18.5 12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                <path d="M9 15.5C10.8 13.8 13.2 13.8 15 15.5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                <circle cx="12" cy="19" r="1.4" fill="#fff" />
+              </svg></span>
+            Stream<span>Line</span>
+          </a>
+          <p>Reliable internet, cable TV and bundled communication services designed to keep homes connected with fast
+            speeds and exceptional support.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V9.6c0-.4.2-.6.5-.6z"
+                  fill="#fff" />
+              </svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 5.6c-.7.3-1.4.5-2.2.6a3.7 3.7 0 001.6-2 7.6 7.6 0 01-2.4.9 3.7 3.7 0 00-6.4 3.4A10.6 10.6 0 013 4.9a3.7 3.7 0 001.2 5 3.6 3.6 0 01-1.7-.5v.1a3.7 3.7 0 003 3.6 3.7 3.7 0 01-1.7.1 3.7 3.7 0 003.5 2.6A7.5 7.5 0 013 17.5a10.6 10.6 0 005.7 1.7c6.9 0 10.6-5.7 10.6-10.6v-.5c.7-.5 1.4-1.2 1.7-2z"
+                  fill="#fff" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-width="1.6" />
+                <circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="1.6" />
+                <circle cx="17.3" cy="6.7" r="1" fill="#fff" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#fff" stroke-width="1.6" />
+                <path d="M7.5 10v6.5M7.5 7.5v.01M11.5 16.5V13c0-1.4.8-2 1.9-2s1.9.6 1.9 2v3.5" stroke="#fff"
+                  stroke-width="1.6" stroke-linecap="round" />
+              </svg></a>
+          </div>
+        </div>
+        <div>
+          <h5>Important Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="plans.html">Internet Plans</a></li>
+            <li><a href="plans.html">TV Packages</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact Us</h5>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-6.5 7-11a7 7 0 10-14 0c0 4.5 7 11 7 11z" stroke="currentColor" stroke-width="1.7" />
+                <circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.7" />
+              </svg>75 3rd Ave, New York, NY 10003, USA</li>
+            <li><svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="0" />
+                <path d="M3 6.5l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z"
+                  stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+              </svg>info@streamlinehome.com</li>
+            <li><svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11 21 3 13 3 4.6c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"
+                  stroke="currentColor" stroke-width="1.5" />
+              </svg>(844) 781-3344</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 StreamLine Home. All rights reserved.</span>
+        <span><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp;
+            Conditions </a> &nbsp;·&nbsp; <a href="support-policy.html">Support Policy</a> </span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg></button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdown = document.querySelector(".nav-dropdown");
+      const toggle = document.querySelector(".nav-dropdown-toggle");
+      if (!dropdown || !toggle) return;
+
+      toggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        const isOpen = dropdown.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  </script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

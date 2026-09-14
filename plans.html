@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plans &amp; Pricing | StreamLine Home</title>
+  <meta name="description"
+    content="Compare fiber internet, live TV and bundle plans side by side and find the right fit for your home.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: var(--radius-m);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .compare-table th,
+    .compare-table td {
+      padding: 18px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      font-size: 14.5px;
+    }
+
+    .compare-table thead th {
+      font-family: var(--display);
+      background: var(--navy);
+      color: #fff;
+      font-size: 13.5px;
+    }
+
+    .compare-table tbody tr:hover {
+      background: var(--cloud);
+    }
+
+    .compare-table td:first-child,
+    .compare-table th:first-child {
+      color: var(--slate);
+      font-weight: 500;
+    }
+
+    .compare-table .yes {
+      color: #0EA05B;
+      font-weight: 700;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none">
+            <path d="M2 8.5C7 3.5 17 3.5 22 8.5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            <path d="M5.5 12C9 8.7 15 8.7 18.5 12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            <path d="M9 15.5C10.8 13.8 13.2 13.8 15 15.5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            <circle cx="12" cy="19" r="1.4" fill="#fff" />
+          </svg></span>
+        Stream<span>Line</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="plans.html" data-page="plans.html">Plans</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+            Brands
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="brands/xfinity.html">Xfinity</a>
+            <a href="brands/spectrum.html">Spectrum</a>
+          </div>
+        </div>
+        <a href="about.html" data-page="about.html">About Us</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="contact.html" data-page="contact.html">Contact Us</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+18447813344" class="phone-pill">
+          <span class="ring-dot"><svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11 21 3 13 3 4.6c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"
+                fill="#0F1B3D" />
+            </svg></span>
+          <span><small>Call for best rates</small>(844) 781-3344</span>
+        </a>
+        <button class="nav-toggle" id="navToggle"
+          aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <section class="page-banner">
+    <div class="blob-1"></div>
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Plans &amp; Pricing</span></div>
+      <h1>Plans built around how you actually watch and connect</h1>
+      <p>Filter by internet, TV, or full bundles and compare what's included before you call.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="plan-tabs reveal">
+        <button class="plan-tab is-active" data-tab="all">All Plans</button>
+        <button class="plan-tab" data-tab="internet">Internet</button>
+        <button class="plan-tab" data-tab="tv">TV</button>
+        <button class="plan-tab" data-tab="bundle">Bundles</button>
+      </div>
+
+      <div class="plan-grid">
+        <div class="plan-card reveal" data-plan-group="internet">
+          <div class="plan-name">INTERNET · BASIC</div>
+          <div class="plan-price"><b>$34.99</b><span>/mo</span></div>
+          <div class="plan-sub">100 Mbps fiber, unlimited data</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Good for 1&ndash;3 devices</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Standard WiFi router</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>No annual contract</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Get this plan</a>
+        </div>
+
+        <div class="plan-card is-popular reveal" data-plan-group="internet">
+          <div class="plan-badge">Best value</div>
+          <div class="plan-name">INTERNET · PLUS</div>
+          <div class="plan-price"><b>$54.99</b><span>/mo</span></div>
+          <div class="plan-sub">500 Mbps fiber, unlimited data</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Good for 4&ndash;8 devices</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>WiFi 6 mesh router</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Free professional install</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary btn-block">Get this plan</a>
+        </div>
+
+        <div class="plan-card reveal" data-plan-group="internet">
+          <div class="plan-name">INTERNET · GIG</div>
+          <div class="plan-price"><b>$74.99</b><span>/mo</span></div>
+          <div class="plan-sub">1 Gig fiber, unlimited data</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Good for 9+ devices</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>WiFi 6E mesh router</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Priority support line</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Get this plan</a>
+        </div>
+
+        <div class="plan-card reveal" data-plan-group="tv">
+          <div class="plan-name">TV · LOCAL</div>
+          <div class="plan-price"><b>$29.99</b><span>/mo</span></div>
+          <div class="plan-sub">80+ local &amp; entertainment channels</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>HD channel lineup</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Cloud DVR, 20 hrs</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Stream on 2 devices</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Get this plan</a>
+        </div>
+
+        <div class="plan-card is-popular reveal" data-plan-group="tv">
+          <div class="plan-badge">Fan favorite</div>
+          <div class="plan-name">TV · PREMIUM</div>
+          <div class="plan-price"><b>$64.99</b><span>/mo</span></div>
+          <div class="plan-sub">200+ channels incl. sports &amp; movies</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>HD &amp; 4K channels</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Cloud DVR, 100 hrs</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Stream on 5 devices</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary btn-block">Get this plan</a>
+        </div>
+
+        <div class="plan-card reveal" data-plan-group="tv">
+          <div class="plan-name">TV · SPORTS &amp; MORE</div>
+          <div class="plan-price"><b>$84.99</b><span>/mo</span></div>
+          <div class="plan-sub">300+ channels, every regional sport</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>All sports packages included</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Cloud DVR, unlimited</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Stream on 8 devices</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Get this plan</a>
+        </div>
+
+        <div class="plan-card reveal" data-plan-group="bundle">
+          <div class="plan-name">BUNDLE · STARTER</div>
+          <div class="plan-price"><b>$59.99</b><span>/mo</span></div>
+          <div class="plan-sub">100 Mbps internet + 80+ channels</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>One monthly bill</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Standard router included</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>No annual contract</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Get this plan</a>
+        </div>
+
+        <div class="plan-card is-popular reveal" data-plan-group="bundle">
+          <div class="plan-badge">Most popular</div>
+          <div class="plan-name">BUNDLE · PREFERRED</div>
+          <div class="plan-price"><b>$79.99</b><span>/mo</span></div>
+          <div class="plan-sub">500 Mbps internet + 200+ channels</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>WiFi 6 mesh router</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>100 hr cloud DVR</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Free professional install</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary btn-block">Get this plan</a>
+        </div>
+
+        <div class="plan-card reveal" data-plan-group="bundle">
+          <div class="plan-name">BUNDLE · ULTIMATE</div>
+          <div class="plan-price"><b>$119.99</b><span>/mo</span></div>
+          <div class="plan-sub">1 Gig internet + 300+ channels</div>
+          <ul class="plan-features">
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>WiFi 6E mesh router</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Unlimited cloud DVR</li>
+            <li><i><svg viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></i>Priority support line</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Get this plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cloud">
+    <div class="container">
+      <div class="head-row reveal">
+        <div>
+          <div class="eyebrow">Side by side</div>
+          <h2>Compare what's included</h2>
+        </div>
+        <p>A closer look at the three bundle tiers so you can pick with confidence.</p>
+      </div>
+      <div class="table-wrap reveal">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Starter</th>
+              <th>Preferred</th>
+              <th>Ultimate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Download speed</td>
+              <td>100 Mbps</td>
+              <td>500 Mbps</td>
+              <td>1 Gig</td>
+            </tr>
+            <tr>
+              <td>Channel count</td>
+              <td>80+</td>
+              <td>200+</td>
+              <td>300+</td>
+            </tr>
+            <tr>
+              <td>4K channels</td>
+              <td>&mdash;</td>
+              <td class="yes">Included</td>
+              <td class="yes">Included</td>
+            </tr>
+            <tr>
+              <td>Cloud DVR</td>
+              <td>20 hrs</td>
+              <td>100 hrs</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Whole-home WiFi mesh</td>
+              <td>&mdash;</td>
+              <td class="yes">Included</td>
+              <td class="yes">Included</td>
+            </tr>
+            <tr>
+              <td>Free professional install</td>
+              <td>&mdash;</td>
+              <td class="yes">Included</td>
+              <td class="yes">Included</td>
+            </tr>
+            <tr>
+              <td>Priority support line</td>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+              <td class="yes">Included</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h3>Not sure which plan fits your home?</h3>
+          <p>Tell us how many people and devices you have &mdash; we'll match a plan in minutes.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+18447813344" class="btn btn-amber">Call (844) 781-3344</a>
+          <a href="contact.html" class="btn btn-ghost">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M2 8.5C7 3.5 17 3.5 22 8.5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                <path d="M5.5 12C9 8.7 15 8.7 18.5 12" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                <path d="M9 15.5C10.8 13.8 13.2 13.8 15 15.5" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                <circle cx="12" cy="19" r="1.4" fill="#fff" />
+              </svg></span>
+            Stream<span>Line</span>
+          </a>
+          <p>Reliable internet, cable TV and bundled communication services designed to keep homes connected with fast
+            speeds and exceptional support.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V9.6c0-.4.2-.6.5-.6z"
+                  fill="#fff" />
+              </svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 5.6c-.7.3-1.4.5-2.2.6a3.7 3.7 0 001.6-2 7.6 7.6 0 01-2.4.9 3.7 3.7 0 00-6.4 3.4A10.6 10.6 0 013 4.9a3.7 3.7 0 001.2 5 3.6 3.6 0 01-1.7-.5v.1a3.7 3.7 0 003 3.6 3.7 3.7 0 01-1.7.1 3.7 3.7 0 003.5 2.6A7.5 7.5 0 013 17.5a10.6 10.6 0 005.7 1.7c6.9 0 10.6-5.7 10.6-10.6v-.5c.7-.5 1.4-1.2 1.7-2z"
+                  fill="#fff" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-width="1.6" />
+                <circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="1.6" />
+                <circle cx="17.3" cy="6.7" r="1" fill="#fff" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#fff" stroke-width="1.6" />
+                <path d="M7.5 10v6.5M7.5 7.5v.01M11.5 16.5V13c0-1.4.8-2 1.9-2s1.9.6 1.9 2v3.5" stroke="#fff"
+                  stroke-width="1.6" stroke-linecap="round" />
+              </svg></a>
+          </div>
+        </div>
+        <div>
+          <h5>Important Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="plans.html">Internet Plans</a></li>
+            <li><a href="plans.html">TV Packages</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact Us</h5>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-6.5 7-11a7 7 0 10-14 0c0 4.5 7 11 7 11z" stroke="currentColor" stroke-width="1.7" />
+                <circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.7" />
+              </svg>75 3rd Ave, New York, NY 10003, USA</li>
+            <li><svg viewBox="0 0 24 24" fill="none">
+                <path d="M3 6.5l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z"
+                  stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+              </svg>info@streamlinehome.com</li>
+            <li><svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11 21 3 13 3 4.6c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"
+                  stroke="currentColor" stroke-width="1.5" />
+              </svg>(844) 781-3344</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 StreamLine Home. All rights reserved.</span>
+         <span><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp;
+            Conditions </a> &nbsp;·&nbsp; <a href="support-policy.html">Support Policy</a> </span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg></button>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
