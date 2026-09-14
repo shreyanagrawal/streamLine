@@ -44,6 +44,7 @@
             <a href="brands/xfinity.html">Xfinity</a>
             <a href="brands/spectrum.html">Spectrum</a>
           </div>
+        </div>
         <a href="about.html" data-page="about.html">About Us</a>
         <a href="index.html#testimonials">Testimonials</a>
         <a href="contact.html" data-page="contact.html">Contact Us</a>
@@ -305,6 +306,26 @@
       <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
         stroke-linejoin="round" />
     </svg></button>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdown = document.querySelector(".nav-dropdown");
+      const toggle = document.querySelector(".nav-dropdown-toggle");
+      if (!dropdown || !toggle) return;
+
+      toggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        const isOpen = dropdown.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 

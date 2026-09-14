@@ -23,6 +23,11 @@
     .footer-bottom a{
       color: rgba(255, 255, 255, .45);
     }
+    .container{
+      max-width: var(--container) !important;
+      width: 100%;
+      padding: 0px 24px !important;
+    }
   </style>
 </head>
 
@@ -167,32 +172,6 @@
     </div>
   </section>
 
-  <section class="section--tight">
-    <div class="container">
-      <div class="stat-band reveal">
-        <div class="stat"><b data-count="120" data-suffix="k+">0</b><span>Homes connected</span></div>
-        <div class="stat"><b data-count="4.9" data-decimals="1">0</b><span>Average rating</span></div>
-        <div class="stat"><b data-count="50" data-suffix="+">0</b><span>States covered</span></div>
-        <div class="stat"><b data-count="15" data-suffix=" yrs">0</b><span>Years of service</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section--tight">
-    <div class="container">
-      <div class="cta-banner reveal">
-        <div>
-          <h3>Have questions before you switch?</h3>
-          <p>Our specialists are ready to walk you through every option.</p>
-        </div>
-        <div class="cta-actions">
-          <a href="tel:+18447813344" class="btn btn-amber">Call (844) 781-3344</a>
-          <a href="contact.html" class="btn btn-ghost">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -278,6 +257,26 @@
       <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
         stroke-linejoin="round" />
     </svg></button>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdown = document.querySelector(".nav-dropdown");
+      const toggle = document.querySelector(".nav-dropdown-toggle");
+      if (!dropdown || !toggle) return;
+
+      toggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        const isOpen = dropdown.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 

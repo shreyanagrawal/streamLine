@@ -2275,7 +2275,7 @@ h3 {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 979px) {
 
   .main-nav,
   .header-actions .phone-pill {
@@ -2293,7 +2293,7 @@ h3 {
   .main-nav {
     position: fixed;
     inset: 0 0 0 auto;
-    width: min(320px, 80vw);
+    width: 100%;
     height: 100vh;
     background: var(--navy);
     flex-direction: column;
@@ -2349,6 +2349,10 @@ h3 {
   .nav-overlay.is-open {
     opacity: 1;
     visibility: visible;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown.is-open .nav-dropdown-menu{
+    transform: translate(0%, 0);
   }
 }
 
